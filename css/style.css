@@ -363,6 +363,21 @@ button.btn.btn-secondary:active {
     background-color: #F9F9F9;
     padding-bottom: 100px;
 }
+.line{
+    color: #0f0f0f;
+    background-color: #0f0f0f;
+    height: 2px;
+    width: 40%;
+    color: #0f0f0f;
+    display: inline-block;
+}
+.pan{
+    position: absolute;
+    top: 20%;
+    right: -20%;
+}
+.pad{
+}
 .img-line{
     display: block;
     position: relative;
@@ -602,6 +617,9 @@ ul li.back{
 @media(max-width:991px) {
     div.blocks div.circle2{
         float: none;
+    }
+    span.pan.line{
+        display: none;
     }
 }
 
