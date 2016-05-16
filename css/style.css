@@ -39,6 +39,10 @@ body {
     width: 100%;
     height: 100%;
 }
+.row{
+    margin-right: 0px;
+    margin-left: 0xp;
+}
 a.navbar-brand {
     font-family: 'Montserrat Bold', arial;
     font-size: 18px;
@@ -346,6 +350,7 @@ button.btn.btn-secondary:active {
 
 /*SECTION framework START*/
 /*SECTION CULTURE START*/
+
 .indent1{
     background-color: #F9F9F9;
     padding-bottom: 100px;
@@ -363,8 +368,7 @@ button.btn.btn-secondary:active {
     top: 20%;
     right: -20%;
 }
-.pad{
-}
+
 .img-line{
     display: block;
     position: relative;
@@ -383,6 +387,20 @@ button.btn.btn-secondary:active {
 .indent2{
     padding-top: 50px;
     padding-bottom: 50px;
+}
+#client-section div.indent2 div.brd span.caret-position{
+    position: absolute;
+    left: -47px;
+    font-size: 120px;
+    color: #F9F9F9;
+    top: 4px;
+}
+#client-section div.blocks.clearfix div.brd.right span.caret-position2{
+    position: absolute;
+    right: -47px;
+    font-size: 120px;
+    color: #F9F9F9;
+    top: 4px;
 }
 .arrow-right {
     left: 150px;
@@ -412,6 +430,7 @@ button.btn.btn-secondary:active {
     -moz-border-radius: 50px;
     -webkit-border-radius: 50px;
     border-radius: 50%;
+    padding-left: 180px;
 }
 .circle2{
     width: 220px;
