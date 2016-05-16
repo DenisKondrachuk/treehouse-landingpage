@@ -388,6 +388,12 @@ button.btn.btn-secondary:active {
     padding-top: 50px;
     padding-bottom: 50px;
 }
+#client-section div.indent2 div.blocks div.brd span.caret-up{
+    position: absolute;
+    top: -120px;
+    font-size: 120px;
+    color: #F9F9F9;
+}
 #client-section div.indent2 div.brd span.caret-position{
     position: absolute;
     left: -47px;
@@ -718,7 +724,15 @@ ul li.back{
         margin-top: 50px;
     }
     .circle2{
+        position: relative;
+        bottom: 30px;
+        left: 90px;
         float: none;
+    }
+    .circle{
+        position: relative;
+        bottom: 30px;
+        left: 90px;
     }
     .brd.right{
         float: none;
@@ -736,13 +750,35 @@ ul li.back{
         width: 420px;
         line-height: 0.9;
     }
-
 }
-
+@media(min-width:480px) and (max-width: 991px){
+    .circle2{
+        position: relative;
+        bottom: 30px;
+        left: 39%;
+        float: none;
+    }
+    .circle{
+        position: relative;
+        bottom: 30px;
+        left: 39%;
+    }
+}
+@media(min-width:990px) {
+    .caret-up{
+        display: none;
+    }
+}
 @media(max-width:991px) {
     div.blocks div.circle2{
         float: none;
     }
+    #client-section div.indent2 div.brd span.caret-position{
+        display: none;
+    }
+    #client-section div.blocks.clearfix div.brd.right span.caret-position2{
+        display: none;
+}
     span.pan.line{
         display: none;
     }
