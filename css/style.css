@@ -138,7 +138,7 @@ background-color: rgba(0, 0, 0, 0.7);
     padding-top: 140px;
 
 }
-button.btn.btn-secondary {
+button.bl-br.btn.btn-secondary{
     position: relative;
     width: 201px;
     height: 60px;
@@ -154,11 +154,11 @@ button.btn.btn-secondary {
     -o-transition: border-radius 0.4s linear 0s;
     transition: border-radius 0.4s linear 0s;
 }
-button.btn.btn-secondary:hover {
+button.bl-br.btn.btn-secondary:hover {
     border-radius: 0px;
 }
-button.btn.btn-secondary:focus,
-button.btn.btn-secondary:active {
+button.bl-br.btn.btn-secondary:focus,
+button.bl-br.btn.btn-secondary:active {
     -webkit-transform: scale(2, 2);
     transform: scale(2, 2);
     opacity: 0;
@@ -237,6 +237,7 @@ button.btn.btn-secondary:active {
     background-size: cover;
     background-position:center center;
     z-index:10;
+    padding-bottom: 136px;
 }
 .blog-text{
     color: white;
@@ -273,7 +274,34 @@ button.btn.btn-secondary:active {
     width: 100%;
     height: 100%;
 }
-
+button.bl-bt.btn.btn-secondary{
+    position: relative;
+    width: 160px;
+    height: 60px;
+    border-radius: 50px;
+    background-color: #7CC576;
+    color: white;
+    font-family: 'Montserrat Bold', arial;
+    font-size: 16px;
+    left: 100px;
+    top: 40px;;
+    -webkit-transition: border-radius 0.4s linear 0s;
+    -moz-transition: border-radius 0.4s linear 0s;
+    -o-transition: border-radius 0.4s linear 0s;
+    transition: border-radius 0.4s linear 0s;
+}
+button.bl-bt.btn.btn-secondary:hover {
+    border-radius: 0px;
+}
+button.bl-bt.btn.btn-secondary:focus,
+button.bl-bt.btn.btn-secondary:active {
+    -webkit-transform: scale(2, 2);
+    transform: scale(2, 2);
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+}
+}
 .relative{
     position: relative;
     padding-bottom: 198px;
@@ -685,11 +713,22 @@ ul li i.pd-mr{
     font-family: font-family: 'roboto_slabthin', serif;
     color: white;
 }
+.text-left{
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #666666;
+    font-weight: 200;
+    -webkit-transition: all 0.2s linear 0s;
+    -moz-transition: all 0.2s linear 0s;
+    -o-transition: all 0.2s linear 0s;
+    transition: all 0.2s linear 0s;
+}
 .st{
-    padding-top: 50px;
+    bottom: 40px;
 }
 .icon-footer{
-    padding-left: 100px;
+
 }
 ul.icon-footer li i.fa{
     border: 2px solid black;
@@ -700,12 +739,23 @@ ul.icon-footer li i.fa{
     font-size: 20px;
     color: white;
     background-color: #0f0f0f;
+    -webkit-transition: all 0.3s linear 0s;
+    -moz-transition: all 0.3s linear 0s;
+    -o-transition: all 0.3s linear 0s;
+    transition: all 0.3s linear 0s;
+}
+ul.icon-footer li i.fa:hover{
+    color: #7CC576;
 }
 ul li.back{
     padding-top: 40px;
-    margin-right: 20px;
+    margin-right: 10px;
 }
+.text-left:hover{
+    color: #7CC576;
+    font-weight: 400;
 
+}
 
 @media(max-width:479px) {
     .box {
@@ -723,25 +773,66 @@ ul li.back{
         background-color: white;
         margin-top: 50px;
     }
+    .brd.right{
+        float: none;
+    }
+
+}
+@media(max-width:550px){
+    .caret-up{
+        display: none;
+}
     .circle2{
         position: relative;
         bottom: 30px;
-        left: 90px;
+        left: 25%;
         float: none;
     }
     .circle{
         position: relative;
         bottom: 30px;
-        left: 90px;
-    }
-    .brd.right{
-        float: none;
+        left: 25%;
     }
 }
-
+@media(max-width:450px){
+    .caret-up{
+        display: none;
+}
+    .circle2{
+        position: relative;
+        bottom: 30px;
+        left: 20%;
+        float: none;
+    }
+    .circle{
+        position: relative;
+        bottom: 30px;
+        left: 20%;
+    }
+}
+@media(max-width:390px){
+    .caret-up{
+        display: none;
+}
+    .circle2{
+        position: relative;
+        bottom: 30px;
+        left: 13%;
+        float: none;
+    }
+    .circle{
+        position: relative;
+        bottom: 30px;
+        left: 13%;
+    }
+}
 @media (max-width: 1200px) {
     .image-iPad{
         display: none;
+    }
+    .st{
+        bottom: 0px;
+        left: 40px;
     }
 }
 
@@ -751,7 +842,7 @@ ul li.back{
         line-height: 0.9;
     }
 }
-@media(min-width:480px) and (max-width: 991px){
+@media(min-width:551px) and (max-width: 991px){
     .circle2{
         position: relative;
         bottom: 30px;
