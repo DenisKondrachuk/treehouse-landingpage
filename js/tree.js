@@ -12,3 +12,7 @@ $(function() {
     }
   });
 });
+
+$('.navbar-toggle').click(function(){
+  $('.menu-block').toggleClass('menuAnim');
+});
